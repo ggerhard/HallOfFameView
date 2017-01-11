@@ -73,7 +73,7 @@ Licensed under MIT
                        <ul  class="list-group">
   					  <li ng-repeat="project in user.projects" class="list-group-item">
   						   <div class="row">
-  								<div class="col-md-1">{{project.month}}</div>
+  								<div class="col-md-1">{{project.date}}</div>
   								<div class="col-md-10">{{project.name}}</div>
   								<div class="col-md-1"><span class="label label-success pull-right">{{project.status}}</span></div>
   							</div>
@@ -90,8 +90,8 @@ Licensed under MIT
 	  </div>
     <div class="row">
         <ul class="pager">
-          <li class="previous"><a href="#">Previous</a></li>
-          <li class="next"><a href="#">Next</a></li>
+          <li class="previous" ng-show="previousUser" ><a ng-href="#!/prof/{{previousUser}}">Previous</a></li>
+          <li class="next" ng-show="nextUser"><a ng-href="#!/prof/{{nextUser}}">Next</a></li>
         </ul>
     </div>
 </div>

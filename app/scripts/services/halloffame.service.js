@@ -9,5 +9,17 @@
  */
 angular.module('hallOfFameViewApp')
   .service('HallOfFame', function ($http) {
-    // AngularJS will instantiate a singleton by calling "new" on this function
+
+    this.query = function() {
+        var promise = $http({
+            method : "GET",
+            url : "https://raw.githubusercontent.com/1ppm/1ppmLog/master/api/HallOfFame.json"
+        }).then(function mySucces(response) {
+            return response.data.users;
+        }, function myError(response) {
+            console.log("Could not find HalloOfFame" + response);
+            return [];
+        });
+        return promise;
+      }
   });
