@@ -15,7 +15,7 @@ angular.module('hallOfFameViewApp')
             method : "GET",
             url : "https://raw.githubusercontent.com/1ppm/1ppmLog/master/api/HallOfFame.json"
         }).then(function mySucces(response) {
-            return response.data.users;
+            return response.data;
         }, function myError(response) {
             console.log("Could not find HalloOfFame" + response);
             return [];
