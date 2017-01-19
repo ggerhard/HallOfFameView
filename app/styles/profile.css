@@ -20,6 +20,7 @@ Licensed under MIT
   background: #fff;
   border: 1px solid grey;
   min-height: 460px;
+  margin-top: 10px;
 }
 
 .profile-userpic img {
@@ -111,9 +112,9 @@ Licensed under MIT
 /* Profile Content */
 .profile-content {
   padding: 0px;
-  background: #fff;
+  /* background: #fff;
+  border: 1px solid grey; */
   min-height: 460px;
-  border: 1px solid grey;
 }
 
 .profile-navigation {
@@ -122,4 +123,20 @@ Licensed under MIT
   bottom: 0;
   width: 90%;
   margin-left: 5%;
+}
+
+.arrow-left, .arrow-right {
+    vertical-align: middle;
+    font-size: 50px;
+    position: fixed;
+  bottom: 10px;
+
+}
+
+.arrow-left {
+  left: 20px;
+}
+
+.arrow-right {
+ right: 20px;
 }
