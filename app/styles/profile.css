@@ -17,6 +17,7 @@ Licensed under MIT
 /* Profile sidebar */
 .profile-sidebar {
   padding: 20px 5px 10px 5px;
+  margin: 10px 12px 0px 12px;
   background: #fff;
   border: 1px solid grey;
   min-height: 460px;

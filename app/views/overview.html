@@ -1,0 +1,27 @@
+<div class="container-fluid overview">
+
+<h1>1PPM Hall of Fame</h1>
+
+<div class="row">
+
+    <div class="col-md-4">
+        <ul class="list-group">
+            <li ng-repeat="user in hof | modulo:3:0" class="list-group-item list-group-item-action"><a ng-href="#!/profile/{{user.username}}">{{user.username}} ({{user.projects.length}})</a></li>
+        </ul>
+    </div>
+
+    <div class="col-md-4">
+        <ul class="list-group">
+            <li ng-repeat="user in hof | modulo:3:1" class="list-group-item list-group-item-action"><a ng-href="#!/profile/{{user.username}}">{{user.username}} ({{user.projects.length}})</a></li>
+        </ul>
+    </div>
+
+    <div class="col-md-4">
+        <ul class="list-group">
+            <li ng-repeat="user in hof | modulo:3:2" class="list-group-item list-group-item-action"><a ng-href="#!/profile/{{user.username}}">{{user.username}} ({{user.projects.length}})</a></li>
+        </ul>
+    </div>
+
+</div
+
+</div>

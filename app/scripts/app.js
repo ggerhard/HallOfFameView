@@ -20,29 +20,29 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-       redirectTo: '/prof'
+       redirectTo: '/overview'
       })
-      .when('/prof/:id', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+      .when('/profile/:id', {
+        templateUrl: 'views/profile.html',
+        controller: 'ProfileCtrl',
+        controllerAs: 'profile'
       })
-       .when('/prof', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+       .when('/profile', {
+        templateUrl: 'views/profile.html',
+        controller: 'ProfileCtrl',
+        controllerAs: 'profile'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/profile', {
-        templateUrl: 'views/profile.html',
-        controller: 'ProfileCtrl',
-        controllerAs: 'profile'
+      .when('/overview', {
+        templateUrl: 'views/overview.html',
+        controller: 'OverviewCtrl',
+        controllerAs: 'overview'
       })
       .otherwise({
-        redirectTo: '/prof'
+        redirectTo: '/overview'
       });
   });

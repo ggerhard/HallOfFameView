@@ -7,7 +7,9 @@
   box-sizing: border-box;
   border-radius: 2px;
   background-clip: padding-box;
+  background: #fff;
 }
+
 .card span.card-title {
     /* color: #fff; */
     color: #888;
@@ -37,6 +39,7 @@
   border-radius: 0 0 2px 2px;
   background-clip: padding-box;
   box-sizing: border-box;
+  min-height: 200px;
 }
 .card .card-content p {
   margin: 0;
@@ -53,9 +56,18 @@
   color: #ffab40;
   margin-right: 16px;
   transition: color 0.3s ease;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .card .card-action a:hover {
   color: #ffd8a6;
   text-decoration: none;
+}
+
+.card .card-info {
+  color: #ccc;
+  font-size: 20px;
+  border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 6px;
 }

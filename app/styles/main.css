@@ -82,3 +82,7 @@ body {
     border-bottom: 0;
   }
 }
+
+.overview {
+  margin-top: 40px;
+}
